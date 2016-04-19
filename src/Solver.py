@@ -1,12 +1,10 @@
 import math
 
-
 class Solver:
     def __init__(self):
         pass
 
     def calculate(self, a, b, c):
-        # type: (object, object, object) -> object
             d = b ** 2 - 4 * a * c
             if d >= 0:
                 disc = math.sqrt(d)
@@ -15,7 +13,6 @@ class Solver:
                 print (root1, root2)
             else:
                 print ("invalid quadratic equation")
-
 
 while True:
     a = int(input("a "))
