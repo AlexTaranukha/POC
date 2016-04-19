@@ -6,6 +6,7 @@ class Solver:
         pass
 
     def calculate(self):
+        # type: () -> object
         while True:
             a = int(input("a "))
             b = int(input("b "))
@@ -17,7 +18,7 @@ class Solver:
                 root2 = (-b - disc) / (2 * a)
                 print (root1, root2)
             else:
-                print ("invalid equation")
+                print ("invalid quadratic equation")
 
 
 Solver().calculate()
