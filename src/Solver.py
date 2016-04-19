@@ -5,7 +5,6 @@ class Solver:
         pass
 
     def calculate(self, a, b, c):
-        # type: (object, object, object) -> object
             d = b ** 2 - 4 * a * c
             if d >= 0:
                 discriminant = math.sqrt(d)
