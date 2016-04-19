@@ -7,7 +7,6 @@ class Solver:
 
     def calculate(self, a, b, c):
         # type: (object, object, object) -> object
-        # type: () -> object
             d = b ** 2 - 4 * a * c
             if d >= 0:
                 disc = math.sqrt(d)
