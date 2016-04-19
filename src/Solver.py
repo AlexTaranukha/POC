@@ -5,12 +5,9 @@ class Solver:
     def __init__(self):
         pass
 
-    def calculate(self):
+    def calculate(self, a, b, c):
+        # type: (object, object, object) -> object
         # type: () -> object
-        while True:
-            a = int(input("a "))
-            b = int(input("b "))
-            c = int(input("c "))
             d = b ** 2 - 4 * a * c
             if d >= 0:
                 disc = math.sqrt(d)
@@ -21,4 +18,9 @@ class Solver:
                 print ("invalid quadratic equation")
 
 
-Solver().calculate()
+while True:
+    a = int(input("a "))
+    b = int(input("b "))
+    c = int(input("c "))
+
+    Solver().calculate(a, b, c)
